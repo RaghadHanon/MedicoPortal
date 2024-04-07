@@ -1,0 +1,39 @@
+.NavLogo {
+  width: 70px;
+}
+
+.dropdownItem {
+  text-decoration: none;
+  color: var(--color1);
+  text-align: center;
+}
+.NavStyle {
+  background-color: var(--color2) !important;
+  box-shadow: 0px 1px 10px var(--color1);
+}
+
+.navbarToggler {
+  border: 1px solid var(--color4) !important;
+  border-radius: 3px !important;
+  padding: 5px 10px !important;
+}
+
+.navbarToggler:focus {
+  box-shadow: 0px 0px 3px var(--color4) !important;
+}
+
+.userImage {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.cartCount {
+  top: -7px;
+  right: 4px;
+  background-color: var(--color4);
+  width: 17px;
+  height: 17px;
+  font-size: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--color1);
+}
