@@ -4,7 +4,6 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Pages/Home/Home'
 import Root from './routs/Root'
 import Features from './Pages/Features/Features';
-import Clinics from './Pages/Clinics/Clinics';
 import Doctors from './Pages/Doctors/Doctors';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
@@ -19,9 +18,6 @@ function App() {
     children : [{
       path : '/',
       element : <Home/>,
-    },{
-      path : '/Clinics',
-      element : <Clinics/>,
     },{
       path : '/Doctors',
       element : <Doctors/>,

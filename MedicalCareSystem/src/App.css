@@ -1,5 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -57,6 +59,10 @@ ul {
 }
 .kiwiMaruFont {
   font-family: var(--kiwiMaru);
+}
+
+.lobsterFont{
+  font-family: "Lobster", sans-serif;
 }
 @media screen and (max-width: 400px) {
   .container {

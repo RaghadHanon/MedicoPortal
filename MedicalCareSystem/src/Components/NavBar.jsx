@@ -54,17 +54,7 @@ function NavBar() {
                 Features
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                className={`nav-link   color4 letterSpace 
-                ${ location.pathname.includes("Clinics") ? "fw-semibold" : ""} 
-                `}
-                
-                to="/Clinics"
-              >
-                Clinics
-              </NavLink>
-            </li>
+           
             <li className="nav-item" >
               <NavLink
                 className={`nav-link   color4 letterSpace d-flex gap-2 
