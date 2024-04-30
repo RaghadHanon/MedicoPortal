@@ -1,7 +1,6 @@
 import React from 'react'
 import style from "./Footer.module.css";
-import logo from "../../../public/LogoTheme2.png";
-import { FaFacebookSquare } from "react-icons/fa";
+import logo from "../../public/LogoTheme2.png";
 import { NavLink } from 'react-router-dom';
 
 export default function Footer() {
