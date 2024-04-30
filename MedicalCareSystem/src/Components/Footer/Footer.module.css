@@ -1,0 +1,54 @@
+.NavLogo {
+    width: 80px;
+}
+.footer{
+    background-color: var(--color2) !important;
+    color: rgb(255, 255, 255);
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer .container{
+    display: flex;
+    width:87%;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .container .top,
+.footer .container .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+}
+.footer .container .top ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width:100%;
+}
+.footer .container .top ul li a{
+    width:100%;
+    text-decoration: none;
+    color: var(--color4);
+    text-align: center;
+    border-right: 2px solid var(--color4);
+    padding:0px 20px;
+}
+.footer .container .top ul li:last-child a{
+    border-right: 0px solid var(--color4);
+}
+.footer .container .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #EEEEEE;
+    border-top: 0.1px solid #EEEEEE;
+    padding:20px 0px;
+}
