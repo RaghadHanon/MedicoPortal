@@ -9,41 +9,46 @@ import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import DoctorProfile from './Pages/DoctorProfile/DoctorProfile';
 import PatientProfile from './Pages/PatientProfile/PatientProfile';
+import DoctorRegister from './Pages/Register/DoctorRegister'
 
 function App() {
 
-  const router = createBrowserRouter ([
+  const router = createBrowserRouter([
     {
-    element : <Root/> ,
-    children : [{
-      path : '/',
-      element : <Home/>,
-    },{
-      path : '/Doctors',
-      element : <Doctors/>,
-    },{
-      path : '/Features',
-      element : <Features/>,
-    },{
-      path : '/Login',
-      element : <Login/>,
-    },{
-      path :'/Register',
-      element : <Register/>
-    },,{
-      path :'/DoctorProfile',
-      element : <DoctorProfile/>
-    },,{
-      path :'/PatientProfile',
-      element : <PatientProfile/>
-    },
-  ]
-  }
-]);
+      element: <Root />,
+      children: [{
+        path: '/',
+        element: <Home />,
+      }, {
+        path: '/Doctors',
+        element: <Doctors />,
+      }, {
+        path: '/Features',
+        element: <Features />,
+      }, {
+        path: '/Login',
+        element: <Login />,
+      }, {
+        path: '/Register',
+        element: <Register />,
+        children: [{
+          path: '/Register/DoctorRegister',
+          element: <DoctorRegister />
+        }]
+      }, , {
+        path: '/DoctorProfile',
+        element: <DoctorProfile />
+      }, , {
+        path: '/PatientProfile',
+        element: <PatientProfile />
+      },
+      ]
+    }
+  ]);
 
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
   )
 }

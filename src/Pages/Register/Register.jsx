@@ -1,8 +1,12 @@
 import React from 'react'
+import DoctorRegister from './DoctorRegister'
 
 function Register() {
   return (
-    <div>Register</div>
+    <div>
+
+      <DoctorRegister/>
+    </div>
   )
 }
 
