@@ -16,7 +16,7 @@ function Features() {
       title: 'Chronic Disease Managemen',
       description: ' Implement tools and resources for managing chronic conditions'
     }, {
-      title: 'Integrative Health Record Management',
+      title: 'Health Record Management',
       description: 'Provide a centralized platform for managing and organizing all health-related documents, including medical records, test results,  ensuring easy access with healthcare providers'
     }
   ]
