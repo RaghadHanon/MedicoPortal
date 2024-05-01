@@ -30,7 +30,7 @@
   text-align: center;
   font-size: 20px;
   position: absolute;
-  top: 4.6em;
+  top: 4em;
   left: 0;
   right: 0;
   color: rgb(255, 255, 255);
@@ -41,7 +41,7 @@
   font-size: 14px;
   font-weight: 100;
   position: relative;
-  top: 0.5em;
+  top: 0em;
   text-transform: lowercase;
 }
 
