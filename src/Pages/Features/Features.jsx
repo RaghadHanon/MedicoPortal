@@ -22,13 +22,13 @@ function Features() {
   ]
   return (
 
-    <div className={`${style.box} py-4 my-2`}>
+    <div className={`${style.box} py-4 my-4`}>
       <div className={`d-flex justify-content-start align-items-center gap-3 m-5 mb-4 ps-5 `}>
         <i class="fa-solid fa-heart fa-2xl" style={{ color: "#176b87" }}></i>
         <h4 className={`kiwiMaruFont color2 fw-semibold`}>How Can Our Website Enhance Your Experience?</h4>
 
       </div>
-      <div className={`mt-4 mb-5 pt-4 pb-5 d-flex justify-content-center gap-3 row-gap-3 flex-wrap`}>
+      <div className={`mt-3 mb-4 pt-3 pb-4 d-flex justify-content-center gap-3 row-gap-3 flex-wrap`}>
         {featuresArray.map((feature) => (
           <FeatureCard
             title={feature.title}
