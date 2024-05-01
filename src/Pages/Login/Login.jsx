@@ -3,9 +3,9 @@ import logo from '../../../public/logo.png'
 import { NavLink } from 'react-router-dom'
 function Login() {
   return (
-   <div><section className="vh-100">
+   <div><section className="">
     <div className="container py-5 h-100 d-flex justify-content-center align-items-center">
-      <div className="row d-flex justify-content-center align-items-center h-100">
+      <div className="row d-flex justify-content-center align-items-center ">
         <div className="col col-xl-10">
           <div className="card" style={{borderRadius: '1rem'}}>
             <div className="row g-0">
