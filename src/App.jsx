@@ -10,6 +10,7 @@ import Register from './Pages/Register/Register';
 import DoctorProfile from './Pages/DoctorProfile/DoctorProfile';
 import PatientProfile from './Pages/PatientProfile/PatientProfile';
 import DoctorRegister from './Pages/Register/DoctorRegister'
+import PatientRegister from './Pages/Register/PatientRegister'
 
 function App() {
 
@@ -31,11 +32,13 @@ function App() {
       }, {
         path: '/Register',
         element: <Register />,
-        children: [{
-          path: '/Register/DoctorRegister',
-          element: <DoctorRegister />
-        }]
-      }, , {
+      },{
+        path: '/PatientRegister',
+        element: <PatientRegister />
+      },{
+        path: '/Register/DoctorRegister',
+        element: <DoctorRegister />
+      },{
         path: '/DoctorProfile',
         element: <DoctorProfile />
       }, , {
