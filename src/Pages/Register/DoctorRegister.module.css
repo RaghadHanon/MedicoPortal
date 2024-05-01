@@ -21,8 +21,9 @@ input::placeholder {
 
 @media screen and (max-width:900px) {
   .container {
-
       width: 80%;
-
   }
+  .userImg{
+    width: 100%;
+    }
 }

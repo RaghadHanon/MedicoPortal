@@ -88,3 +88,21 @@
       transform: rotate(360deg);
     }
   }
+
+  @media screen and (max-width:580px) {
+    .eCard{
+      width: 200px;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .eCard{
+      width: 150px;
+      height: 300px;
+    }
+  }
+  @media screen and (max-width:350px) {
+    .eCard{
+      width: 130px;
+      height: 250px;
+    }
+  }
