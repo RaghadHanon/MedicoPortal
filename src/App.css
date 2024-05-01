@@ -57,6 +57,12 @@ ul {
 .container {
   width: 87% !important;
 }
+.row{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
 .kiwiMaruFont {
   font-family: var(--kiwiMaru);
 }

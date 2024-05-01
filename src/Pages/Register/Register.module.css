@@ -1,10 +1,19 @@
 .register{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap:80px;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    width:100%;
+    color:var(--color1);
+}
+
+.rowCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:80px;
+    width: 100%;
 }

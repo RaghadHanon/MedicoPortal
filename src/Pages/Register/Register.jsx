@@ -7,14 +7,17 @@ import patientImg from '../../../public/PatientW.png'
 import style from './Register.module.css'
 function Register() {
   return (
-    <div className={`${style.register} container`}>
-      <NavLink to="/Register/DoctorRegister">     
-       <RegisterCard userimg={doctorImg} title={"doctor"}/>
-    </NavLink>
+    <div className={`${style.register} container kiwiMaruFont`}>
+      <h3 className='text-center'>Register As</h3>
+      <div className={`${style.rowCard}`}>
+      <NavLink to="/Register/DoctorRegister">
+          <RegisterCard userimg={doctorImg} title={"doctor"} />
+        </NavLink>
+        <NavLink to="/PatientRegister">
+          <RegisterCard userimg={patientImg} title={"patient"} />
+        </NavLink>
+      </div>
 
-      <NavLink to="/PatientRegister">
-      <RegisterCard userimg={patientImg} title={"patient"}/>
-      </NavLink>
     </div>
   )
 }
