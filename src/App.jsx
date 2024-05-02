@@ -12,6 +12,8 @@ import PatientProfile from './Pages/PatientProfile/PatientProfile';
 import DoctorRegister from './Pages/Register/DoctorRegister'
 import PatientRegister from './Pages/Register/PatientRegister'
 
+import UserContextProvider from "./Context/User.jsx";
+
 function App() {
 
   const router = createBrowserRouter([
@@ -36,7 +38,7 @@ function App() {
         path: '/PatientRegister',
         element: <PatientRegister />
       },{
-        path: '/Register/DoctorRegister',
+        path: '/DoctorRegister',
         element: <DoctorRegister />
       },{
         path: '/DoctorProfile',
@@ -51,7 +53,10 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <UserContextProvider>
+        <RouterProvider router={router} />
+      </UserContextProvider>
+      
     </>
   )
 }

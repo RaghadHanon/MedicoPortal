@@ -14,7 +14,7 @@ export default function RegisterCard({ userimg , title}) {
           <div className={`${style.infotop}`}>
             <img src={`${userimg}`} />
             <br />
-            <div className={`${style.name} p-3 `}><h3>{title}</h3></div>
+            <div className={`${style.name} p-3 kiwiMaruFont `}><h4>{title}</h4></div>
           </div>
         </div>
 

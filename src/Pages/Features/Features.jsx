@@ -24,7 +24,7 @@ function Features() {
 
     <div className={`${style.box} py-4 my-4`}>
       <div className={`d-flex justify-content-start align-items-center gap-3 m-5 mb-4 ps-5 `}>
-        <i class="fa-solid fa-heart fa-2xl" style={{ color: "#176b87" }}></i>
+        <i className="fa-solid fa-heart fa-2xl" style={{ color: "#176b87" }}></i>
         <h4 className={`kiwiMaruFont color2 fw-semibold`}>How Can Our Website Enhance Your Experience?</h4>
 
       </div>
