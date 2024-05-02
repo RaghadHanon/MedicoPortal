@@ -79,7 +79,7 @@ function DoctorRegister() {
               <input  onChange={handleChange} value={user.name} type='text' name='name' id='name' className='' placeholder='Your full name' />
             </div>
           </div>
-          <img src={userDoctor} alt='user-doctor' className={`col-3 me-5`} />
+          <img src={userDoctor} alt='user-doctor' className={`${style.userImg} col-3 me-5`} />
         </div>
 
         <div className={`d-flex flex-row flex-wrap justify-content-between `}>
