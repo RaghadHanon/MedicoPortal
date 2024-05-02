@@ -60,7 +60,7 @@ function DoctorRegister() {
       email: "",
       password: "",
       gender: "",
-      medicalSpecificationId: 0,
+      medicalSpecificationId: MedSpe.medicalSpecificationId[0],
       phoneNumber: "",
       address: ""
   
