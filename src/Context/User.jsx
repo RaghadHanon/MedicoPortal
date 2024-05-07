@@ -12,9 +12,8 @@ const UserContextProvider = ({children})=> {
 
   const getUserData =async ()=>{
       if(userToken != null){
-        
         setLoggedIn(true);
-        setUser(jwtDecode(userToken));   
+        setUser(jwtDecode(userToken));  
       }
       else setUser(null);
       
@@ -22,7 +21,7 @@ const UserContextProvider = ({children})=> {
   useEffect(()=> {
     getUserData();
   },[userToken]);
-  return <UserContext.Provider value={{User,loggedIn,setLoggedIn,setUserToken}}>
+  return <UserContext.Provider value={{User,loggedIn,userToken,setLoggedIn,setUserToken}}>
     {children}
   </UserContext.Provider>
 };

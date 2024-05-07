@@ -106,7 +106,7 @@ function DoctorRegister() {
 
         <div className={`d-flex flex-row flex-wrap justify-content-between pt-2`}>
           <label htmlFor="medicalSpecificationId" className={`kiwiMaruFont color1  col-5`}>Medical specialization</label>
-          <select onChange={handleChange} value={user.medicalSpecificationId} name='medicalSpecificationId' value={user.medicalSpecificationId} className={`kiwiMaruFont color1  col-5`}>
+          <select onChange={handleChange} value={user.medicalSpecificationId} name='medicalSpecificationId' key={user.medicalSpecificationId} className={`kiwiMaruFont color1  col-5`}>
             {
               MedSpeArray.map((MedSpe) => (
                 <>
