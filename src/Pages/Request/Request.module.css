@@ -1,0 +1,24 @@
+.requestDev{
+  width: 60%;
+  height: 600px;
+}
+.requestDev p{
+  font-size: 14px;
+}
+
+.requestDev input{
+  outline: none;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+}
+
+.requestDev input::placeholder{
+  position: absolute;
+  top:5px;
+  font-size: 14px;
+}
+.requestDev input[type="submit"]{
+  width: 40%;
+  height: 35px;
+  border-radius: 3px;
+}

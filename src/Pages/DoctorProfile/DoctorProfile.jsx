@@ -1,10 +1,14 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useEffect, useState} from 'react'
 import axios from 'axios'
 import { UserContext } from '../../Context/User';
+import { useParams ,Link} from 'react-router-dom';
+import Request from './../Request/Request';
 
 
 function DoctorProfile() {
-  const {userToken,User} = useContext(UserContext)
+  const {name}= useParams();
+  const {userToken,User} = useContext(UserContext);
+  const [doctor,setDoctor] = useState({});
   const [clinic, setClinic ] = useState({
     name: '',
     location: '',
@@ -40,6 +44,22 @@ function DoctorProfile() {
   }
  };
 
+ const getProfileData = async ()=>{
+  try{
+    const {data}=await axios.get(`/api/doctor/${name}`);
+    setDoctor(data);
+
+  }catch(e){
+    console.log(e);
+  }
+  
+ }
+
+ useEffect(()=>{
+  
+  getProfileData();
+ },[])
+
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -49,6 +69,10 @@ function DoctorProfile() {
         <input type='submit' ></input>
 
       </form>
+
+
+      {User?.role == "Patient"? <Link to={`/Request/${doctor.name}/${doctor.doctorId}`}>Request</Link>:<></> }
+      {doctor? <h2>${doctor.name}</h2> :<></>}
     </div>
   )
 }

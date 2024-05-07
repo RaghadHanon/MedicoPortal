@@ -77,6 +77,17 @@ function NavBar() {
                 Doctors
               </NavLink>
             </li>
+
+            <li className="nav-item" >
+              <NavLink
+                className={`nav-link   color4 letterSpace d-flex gap-2 
+                ${ location.pathname.includes("MedicalSpecifications") ? "fw-semibold" : ""} 
+                `}
+                to="/MedicalSpecifications"
+              >
+                MedicalSpecifications
+              </NavLink>
+            </li>
           </ul>
 
           <ul className="navbar-nav  align-self-end gap-2" >

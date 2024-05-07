@@ -3,6 +3,10 @@ import userDoctor from "../../../public/user-doctor.png"
 import style from './DoctorRegister.module.css'
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Bounce, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function DoctorRegister() {
 
@@ -25,7 +29,7 @@ function DoctorRegister() {
 
   const GetMedSpe = async () => {
     try {
-      const { data } = await axios.get('https://localhost:7281/api/MedicalSpecification');
+      const { data } = await axios.get(`/api/MedicalSpecification`);
       setMedSpeArray(data);
     } catch (e) {
 
@@ -49,8 +53,10 @@ function DoctorRegister() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7281/api/Authentication/register-doctor', user);
+      const { data } = await axios.post(`/api/Authentication/register-doctor`, user);
+
       navigate("/Login");
+
       setUser({
         name: "",
         email: "",
@@ -61,8 +67,41 @@ function DoctorRegister() {
         address: ""
 
       });
-    } catch (e) {
-      console.log(e);
+      toast.success("Sign up successfully", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+    } catch (error) {
+      toast.error(error.response.data.title, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      toast.error(error.response.data.message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      console.log(error.response.data.title);
     }
 
 
@@ -106,7 +145,10 @@ function DoctorRegister() {
 
         <div className={`d-flex flex-row flex-wrap justify-content-between pt-2`}>
           <label htmlFor="medicalSpecificationId" className={`kiwiMaruFont color1  col-5`}>Medical specialization</label>
+
           <select onChange={handleChange} value={user.medicalSpecificationId} name='medicalSpecificationId' key={user.medicalSpecificationId} className={`kiwiMaruFont color1  col-5`}>
+
+
             {
               MedSpeArray.map((MedSpe) => (
                 <>
