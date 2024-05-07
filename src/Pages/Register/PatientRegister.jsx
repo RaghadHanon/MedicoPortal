@@ -3,6 +3,9 @@ import userDoctor from "../../../public/user-solid 1.png"
 import style from './DoctorRegister.module.css'
 import {  useNavigate } from "react-router-dom";
 import axios from 'axios';
+import { Bounce, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function PatientRegister() {
   
@@ -28,7 +31,7 @@ function PatientRegister() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7281/api/Authentication/register-patient', user);
+      const { data } = await axios.post(`/api/Authentication/register-patient`, user);
    
       setUser({
         name: "",
@@ -38,10 +41,43 @@ function PatientRegister() {
         phoneNumber: "",
         address: ""
       });
-      
+      toast.success("Sign up successfully", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
       navigate("/Login");
-    } catch (e) {
-      console.log(e);
+    } catch (error) {
+      console.log(error.response.data.title);
+
+      toast.error(error.response.data.title, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      toast.error(error.response.data.message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
 
   };

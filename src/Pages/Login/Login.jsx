@@ -4,6 +4,8 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import style from './Login.module.css'
 import axios from 'axios'
 import { UserContext } from "../../Context/User";
+import 'react-toastify/dist/ReactToastify.css';
+import { Bounce, toast } from 'react-toastify';
 
 function Login() {
   const {User, setUserToken } = useContext(UserContext);
@@ -25,7 +27,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7281/api/Authentication/login', user);
+      const { data } = await axios.post(`/api/Authentication/login`, user);
       
       localStorage.setItem("userToken" ,data.token);
       setUser({
@@ -33,10 +35,42 @@ function Login() {
         password: "",
       });
       setUserToken(data.token);
-      
+      toast.success("Log in successfully", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
       navigate("/");
-    } catch (e) {
-      console.log(e);
+    } catch (error) {
+      console.log(error);
+      toast.error(error.response.data.title, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      toast.error(error.response.data.message, {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
     }
 
   

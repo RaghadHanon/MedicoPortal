@@ -13,6 +13,8 @@ import DoctorRegister from './Pages/Register/DoctorRegister'
 import PatientRegister from './Pages/Register/PatientRegister'
 
 import UserContextProvider from "./Context/User.jsx";
+import MedicalSpecifications from './Pages/MedicalSpecifications/MedicalSpecifications.jsx'
+import { ToastContainer } from 'react-toastify'
 
 function App() {
 
@@ -34,18 +36,21 @@ function App() {
       }, {
         path: '/Register',
         element: <Register />,
-      },{
+      }, {
         path: '/PatientRegister',
         element: <PatientRegister />
-      },{
+      }, {
         path: '/DoctorRegister',
         element: <DoctorRegister />
-      },{
+      }, {
         path: '/DoctorProfile',
         element: <DoctorProfile />
       }, , {
         path: '/PatientProfile',
         element: <PatientProfile />
+      }, , {
+        path: '/MedicalSpecifications',
+        element: <MedicalSpecifications />
       },
       ]
     }
@@ -53,10 +58,23 @@ function App() {
 
   return (
     <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <ToastContainer />
       <UserContextProvider>
         <RouterProvider router={router} />
       </UserContextProvider>
-      
+
     </>
   )
 }
