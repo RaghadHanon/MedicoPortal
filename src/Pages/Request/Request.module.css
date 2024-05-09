@@ -1,6 +1,7 @@
 .requestDev{
   width: 60%;
   height: 600px;
+  box-shadow: 0px 0px 4px 2px #ededed;
 }
 .requestDev p{
   font-size: 14px;

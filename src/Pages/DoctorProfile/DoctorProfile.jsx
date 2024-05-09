@@ -62,7 +62,17 @@ function DoctorProfile() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      
+    </div>
+  )
+}
+
+export default DoctorProfile
+
+
+
+/*
+<form onSubmit={handleSubmit}>
         <input onChange={handleChange} type='text' name='name' value={clinic.name}></input>
         <input onChange={handleChange} type='text' name='location' value={clinic.location}></input>
         <input onChange={handleChange} type='text' name='openHours' value={clinic.openHours}></input>
@@ -73,8 +83,4 @@ function DoctorProfile() {
 
       {User?.role == "Patient"? <Link to={`/Request/${doctor.name}/${doctor.doctorId}`}>Request</Link>:<></> }
       {doctor? <h2>${doctor.name}</h2> :<></>}
-    </div>
-  )
-}
-
-export default DoctorProfile
+      */
