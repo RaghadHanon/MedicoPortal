@@ -31,6 +31,7 @@ function DoctorRegister() {
     try {
       const { data } = await axios.get(`/api/MedicalSpecification`);
       setMedSpeArray(data);
+      console.log(data);
     } catch (e) {
 
       console.log(e);
@@ -79,6 +80,7 @@ function DoctorRegister() {
         transition: Bounce,
       });
     } catch (error) {
+      console.log(error);
       toast.error(error.response.data.title, {
         position: "top-center",
         autoClose: 5000,
@@ -152,7 +154,7 @@ function DoctorRegister() {
             {
               MedSpeArray.map((MedSpe) => (
                 <>
-                  <option value={MedSpe.medicalSpecificationId} key={MedSpe.medicalSpecificationId}>{MedSpe.name}</option>
+                  <option value={MedSpe.medicalSpecificationId} key={MedSpe.medicalSpecificationId}>{MedSpe.msName}</option>
                 </>
               ))
             }

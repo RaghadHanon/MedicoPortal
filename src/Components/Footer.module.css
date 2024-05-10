@@ -52,3 +52,7 @@
     border-top: 0.1px solid #EEEEEE;
     padding:20px 0px;
 }
+.footer p{
+    color:var(--color4);
+    font-size: small;
+}

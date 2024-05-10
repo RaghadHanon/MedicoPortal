@@ -49,7 +49,7 @@ function App() {
         element: <DoctorProfile />,
        
       }, , {
-        path: '/PatientProfile',
+        path: '/patient/:name',
         element: <PatientProfile />
       }, , {
         path: '/MedicalSpecifications',

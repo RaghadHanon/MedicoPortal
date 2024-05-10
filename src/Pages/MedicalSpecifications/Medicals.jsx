@@ -18,7 +18,7 @@ export default function Medicals() {
         try {
             const { data } = await axios.get(`/api/MedicalSpecification`);
             setMedSpeArray(data);
-            console.log(MedSpeArray);
+            console.log(data);
         } catch (e) {
             console.log(e);
         }

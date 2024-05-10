@@ -32,7 +32,7 @@ function DoctorProfile() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post('https://localhost:7281/api/doctor/clinic',
+      const { data } = await axios.post('/api/doctor/clinic',
         clinic, {
         headers: {
           Authorization: `Bearer ${userToken}`,
@@ -178,7 +178,7 @@ function DoctorProfile() {
             :
             <div className={`p-5 d-flex flex-column flex-grow-1 gap-4`}>
               {
-                requests.length ==0?<span>No requests yet!</span>:
+                (requests)?<span>No requests yet!</span>:
                 requests.map((request) => (
                   <div className={`py-4 px-5 d-flex flex-column  bgwhiteC w-100 border rounded-5`}>
                     <div className={`p-2 d-flex flex-wrap justify-content-between border-bottom `}>

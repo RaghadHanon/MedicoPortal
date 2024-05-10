@@ -1,3 +1,6 @@
+.allRegister{
+    width:100%;
+}
 .register{
     display: flex;
     flex-direction: column;
@@ -6,7 +9,8 @@
     margin-top: 100px;
     margin-bottom: 100px;
     color:var(--color1);
-    width: 100%;
+    width: 80%;
+    
 }
 
 .rowCard{
@@ -14,12 +18,24 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap:80px;
+    gap:50px;
     width: 100%;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:800px) {
     .rowCard{
-        gap:30px;
+        gap:20px;
+    }
+    .register{
+        width: 90%;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .rowCard{
+        gap:10px;
+    }
+    .register{
+        padding:10px;
+        width: 95%;
     }
   }
