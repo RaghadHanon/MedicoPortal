@@ -62,7 +62,7 @@ function DoctorRegister() {
         email: "",
         password: "",
         gender: "",
-        medicalSpecificationId: MedSpe.medicalSpecificationId[0],
+        medicalSpecificationId: MedSpe.msId[0],
         phoneNumber: "",
         address: ""
 
@@ -80,7 +80,7 @@ function DoctorRegister() {
       });
     } catch (error) {
       toast.error(error.response.data.title, {
-        position: "top-center",
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -91,7 +91,7 @@ function DoctorRegister() {
         transition: Bounce,
       });
       toast.error(error.response.data.message, {
-        position: "top-center",
+        position: "bottom-right",
         autoClose: 5000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -150,9 +150,9 @@ function DoctorRegister() {
 
 
             {
-              MedSpeArray.map((MedSpe) => (
+              MedSpeArray?.map((MedSpe) => (
                 <>
-                  <option value={MedSpe.medicalSpecificationId} key={MedSpe.medicalSpecificationId}>{MedSpe.name}</option>
+                  <option value={MedSpe.msId} key={MedSpe.msId}>{MedSpe.msName}</option>
                 </>
               ))
             }
