@@ -46,7 +46,8 @@ function App() {
         element: <DoctorRegister />
       }, {
         path: '/DoctorProfile/:name',
-        element: <DoctorProfile />
+        element: <DoctorProfile />,
+       
       }, , {
         path: '/PatientProfile',
         element: <PatientProfile />

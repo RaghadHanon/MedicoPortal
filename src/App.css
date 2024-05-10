@@ -16,6 +16,7 @@ ul {
   --color2: #176b87;
   --color3: #64CCC5;
   --color4: #EEEEEE;
+  --color5: #f8f8f8;
   --kiwiMaru: "Kiwi Maru";
   --swiper-theme-color: #176B87;
 }
@@ -52,6 +53,13 @@ ul {
 }
 .bgcolor4 {
   background-color: var(--color4) !important;
+}
+
+.color5 {
+  color: var(--color5) !important;
+}
+.bgcolor5 {
+  background-color: var(--color5) !important;
 }
 
 .container {
