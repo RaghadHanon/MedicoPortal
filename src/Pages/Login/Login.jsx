@@ -34,6 +34,7 @@ function Login() {
         email: "",
         password: "",
       });
+      console.log(data);
       setUserToken(data.token);
       toast.success("Log in successfully", {
         position: "top-center",

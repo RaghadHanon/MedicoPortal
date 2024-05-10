@@ -88,15 +88,22 @@
     }
   }
 
-  @media screen and (max-width:580px) {
+  @media screen and (max-width:800px) {
     .eCard{
       width: 200px;
+      height: 270px;
     }
   }
-  @media screen and (max-width:450px) {
+  @media screen and (max-width:600px) {
     .eCard{
-      width: 150px;
-      height: 300px;
+      width: 180px;
+      height: 260px;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .eCard{
+      width: 130px;
+      height: 250px;
     }
   }
   @media screen and (max-width:350px) {

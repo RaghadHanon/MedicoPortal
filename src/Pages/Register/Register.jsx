@@ -7,8 +7,8 @@ import patientImg from '../../../public/PatientW.png'
 import style from './Register.module.css'
 function Register() {
   return (
-    <div className={`d-flex justify-content-center `}> 
-      <div className={`${style.register} w-50  kiwiMaruFont border py-4 `}>
+    <div className={`${style.allregister} d-flex justify-content-center `}> 
+      <div className={`${style.register}  kiwiMaruFont border py-4 `}>
         <h5 className='text-center py-2 color1  '>You want to use Medico Portal as a </h5>
         <div className={`${style.rowCard} d-flex justify-content-center `}>
           <NavLink to="/DoctorRegister">

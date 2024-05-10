@@ -3,7 +3,7 @@ import style from './Home.module.css'
 import { Link } from 'react-router-dom'
 import Features from '../Features/Features'
 import introImg from "../../../public/introIm.png"
-import MedSwiper from '../MedicalSpecifications/MedSwiper'
+import MedSwiper from '../MedicalSpecifications/Medicals'
 function Home() {
   return (
     <>

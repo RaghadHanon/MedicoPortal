@@ -1,3 +1,7 @@
+.allregister{
+    width:100%;
+    
+}
 .register{
     display: flex;
     flex-direction: column;
@@ -5,8 +9,7 @@
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    color:var(--color1);
-    width: 100%;
+    color:var(--color3);
 }
 
 .rowCard{
@@ -16,10 +19,14 @@
     justify-content: center;
     gap:80px;
     width: 100%;
+    padding:20px;
 }
 
 @media screen and (max-width:900px) {
     .rowCard{
-        gap:30px;
+        gap:10px;
+    }
+    .register{
+        width:80%;
     }
   }

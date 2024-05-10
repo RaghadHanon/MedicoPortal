@@ -1,9 +1,9 @@
 import React from 'react'
-import MedSwiper from './MedSwiper'
+import Medicals from './Medicals'
 
 export default function MedicalSpecifications() {
   return (
-         <MedSwiper />
+         <Medicals />
       
   )
 }

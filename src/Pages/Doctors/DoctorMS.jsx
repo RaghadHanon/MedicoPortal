@@ -13,7 +13,7 @@ function DoctorMS() {
     try {
       const { data } = await axios.get(`/api/medicalSpecification/${msId}/doctors`);
       setDoctors(data);
-      
+      console.log(data);
     } catch (e) {
 
       console.log(e);
@@ -32,6 +32,7 @@ function DoctorMS() {
           <Link to={`/DoctorProfile/${doctor.name}`}>{doctor.name}</Link>
         )
       }
+      
     </div>
   )
 }

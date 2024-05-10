@@ -1,13 +1,29 @@
-.Swiper{
-  display: flex;
-  gap:10px;
+.allMEd {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: var(--color2);
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(744deg, #176b871c 60%, #EEEEEE);
+    border-top: 1px solid var(--color3);
+    border-bottom: 1px solid var(--color3);
 }
+
+.Specifics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
 .book {
     position: relative;
-    border-radius: 10px;
-    width: 220px;
-    height: 300px;
-    background-color: whitesmoke;
+    border-radius: 17px;
+    width: 250px;
+    height: 330px;
     -webkit-transform: preserve-3d;
     -ms-transform: preserve-3d;
     transform: preserve-3d;
@@ -23,20 +39,27 @@
     -ms-flex-pack: center;
     justify-content: center;
     color: #000;
-  }
-  .book a{
-    color:var(--color2);
-    text-decoration: none;
-    text-align: center;
-  }
-  
-  .cover {
+    background-color: var(--color4);
+    border: 1px solid var(--color2);
+}
+
+.inBook {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.inBook img {
+    width: 30%;
+}
+
+.cover {
     top: 0;
     position: absolute;
-    background-color: var(--color4);
     width: 100%;
     height: 100%;
-    border: 1px solid var(--color2);
     border-radius: 10px;
     cursor: pointer;
     -webkit-transition: all 0.5s;
@@ -53,22 +76,25 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    flex-direction: column;
-  }
-  
-  .book:hover .cover {
+    background-color: var(--color4);
+}
+
+.book:hover .cover {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     -webkit-transform: rotatey(-80deg);
     -ms-transform: rotatey(-80deg);
     transform: rotatey(-80deg);
-  }
-  
-  p {
+}
+
+p {
     font-size: 20px;
     font-weight: bolder;
-    color :var(--color2);
+    color: var(--color2);
 }
-  .book img{
-    width:50%;
-  }
+
+
+svg {
+    width: 30px;
+    fill: var(--color2);
+}
