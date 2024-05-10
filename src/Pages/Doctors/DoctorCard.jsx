@@ -6,8 +6,9 @@ import { Link } from 'react-router-dom';
 
 function DoctorCard({ doctor }) {
   return (
-   <>
-   </>
+    <div>
+     
+    </div>
   )
 }
 

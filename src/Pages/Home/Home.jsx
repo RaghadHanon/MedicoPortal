@@ -3,6 +3,8 @@ import style from './Home.module.css'
 import { Link } from 'react-router-dom'
 import Features from '../Features/Features'
 import introImg from "../../../public/introIm.png"
+import { UserContext } from "../../Context/User";
+
 function Home() {
   const { User, loggedIn } = useContext(UserContext);
 
@@ -32,7 +34,6 @@ function Home() {
         <img className={`col-lg-7 col-12 ${style.transX}`} alt='Medical image' src={introImg} />
       </div>
       <Features />
-      <MedSwiper />
     </>
 
   )
