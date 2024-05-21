@@ -1,0 +1,25 @@
+.imgPr{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid var(--color2);
+}
+.pages ul,.pages li{
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  cursor: pointer;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.editForm{
+  background-color: #176b873b;
+}
+.editForm input ,.editForm textarea  {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d7d7d7;
+  margin-left: 10px;
+  
+}

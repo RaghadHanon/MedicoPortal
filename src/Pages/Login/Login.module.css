@@ -1,0 +1,15 @@
+
+.login input {
+  border: 1px solid #d7d7d7;
+  height: 40px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+.login input:focus  {
+  outline: none;
+}
+
+.login label{
+  cursor: pointer;
+}

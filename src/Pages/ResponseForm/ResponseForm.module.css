@@ -1,0 +1,22 @@
+.imgPr{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid var(--color2);
+}
+.responseForm ul ,.responseForm ul li {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.Form textarea   {
+  outline: none;
+  border: 1px solid #d7d7d7;
+  padding: 10px;
+  
+}

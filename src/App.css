@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --color1: #053B50;
+  --color2: #176b87;
+  --color3: #64CCC5;
+  --color4: #EEEEEE;
+  --color5: #f8f8f8;
+  --kiwiMaru: "Kiwi Maru";
+  --swiper-theme-color: #176B87;
+}
+
+.whiteC {
+  color: #fff;
+}
+.bgwhiteC {
+  background-color: #fff;
+}
+.color1 {
+  color: var(--color1) !important;
+}
+.bgcolor1 {
+  background-color: var(--color1) !important;
+}
+
+.color2 {
+  color: var(--color2) !important;
+}
+.bgcolor2 {
+  background-color: var(--color2) !important;
+}
+
+.color3 {
+  color: var(--color3) !important;
+}
+.bgcolor3 {
+  background-color: var(--color3) !important;
+}
+
+.color4 {
+  color: var(--color4) !important;
+}
+.bgcolor4 {
+  background-color: var(--color4) !important;
+}
+
+.color5 {
+  color: var(--color5) !important;
+}
+.bgcolor5 {
+  background-color: var(--color5) !important;
+}
+
+.container {
+  width: 87% !important;
+}
+.row{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.kiwiMaruFont {
+  font-family: var(--kiwiMaru);
+}
+
+.lobsterFont{
+  font-family: "Lobster", sans-serif;
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 95% !important;
+  }
+}

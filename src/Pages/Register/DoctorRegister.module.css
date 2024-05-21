@@ -1,0 +1,29 @@
+.container {
+  width: 50%;
+}
+
+.DocReg input ,.DocReg select{
+  border: 1px solid #d7d7d7;
+  height: 35px;
+  padding: 5px;
+
+}
+.DocReg input:focus ,.DocReg select:focus {
+  outline: none;
+}
+
+.DocReg label{
+  cursor: pointer;
+}
+input::placeholder {
+  color: #abaaaa;
+}
+
+@media screen and (max-width:900px) {
+  .container {
+      width: 80%;
+  }
+  .userImg{
+    width: 100%;
+    }
+}
