@@ -8,6 +8,8 @@ import Doctors from './Pages/Doctors/Doctors';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Request from './Pages/Request/Request.jsx'
+import Response from './Pages/Response/Response.jsx'
+import ResponseForm from './Pages/ResponseForm/ResponseForm.jsx'
 import DoctorProfile from './Pages/DoctorProfile/DoctorProfile';
 import DoctorMS from './Pages/Doctors/DoctorMS.jsx'
 import PatientProfile from './Pages/PatientProfile/PatientProfile';
@@ -60,7 +62,15 @@ function App() {
       },{
         path:'/DoctorMS/:msName/:msId',
         element:<DoctorMS/>
+      },{
+        path :'/Response/:requestId/:role',
+        element:<Response/>,
+      },{
+        path :'/ResponseForm/:requestId/:doctorId/:doctorName/:patientId/:patientName',
+        element:<ResponseForm/>,
       }
+
+      
       ]
     }
   ]);

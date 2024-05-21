@@ -91,7 +91,7 @@ function PatientRegister() {
               <h5 className={`kiwiMaruFont color2 fw-semibold `}>Patient Registration</h5>
               <div className={`d-flex flex-column gap-3 `}>
                 <label htmlFor='name' className={`kiwiMaruFont color1  `}>Name</label>
-                <input onChange={handleChange} value={user.name} type='text' name='name' id='name' className='' placeholder='Your full name' />
+                <input required onChange={handleChange} value={user.name} type='text' name='name' id='name' className='' placeholder='Your full name' />
               </div>
             </div>
             <img src={userDoctor} alt='user-patient' className={`col-3 me-5`} />
@@ -100,11 +100,11 @@ function PatientRegister() {
           <div className={`d-flex flex-row flex-wrap justify-content-between `}>
             <div className={`d-flex flex-column gap-3 col-5`} >
               <label htmlFor='email' className={`kiwiMaruFont color1  `} >Email</label>
-              <input onChange={handleChange} value={user.email} type='email' name='email' id='email' placeholder='Your email' />
+              <input required onChange={handleChange} value={user.email} type='email' name='email' id='email' placeholder='Your email' />
             </div>
             <div className={`d-flex flex-column gap-3 col-5`}>
               <label htmlFor='password' className={`kiwiMaruFont color1  `} >Password</label>
-              <input onChange={handleChange} value={user.password} type='password' name='password' id='password' placeholder='Choose a strong password' />
+              <input required onChange={handleChange} value={user.password} type='password' name='password' id='password' placeholder='Choose a strong password' />
             </div>
           </div>
 
