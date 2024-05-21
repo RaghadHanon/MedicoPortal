@@ -18,7 +18,7 @@ export default function Medicals() {
         try {
             const { data } = await axios.get(`/api/MedicalSpecification`);
             setMedSpeArray(data);
-            console.log(MedSpeArray);
+            console.log(data);
         } catch (e) {
             console.log(e);
         }
@@ -32,7 +32,7 @@ export default function Medicals() {
     return (
 
         <div className={`${style.allMEd}`}>
-            <div className='container m-3 w-100 d-flex gap-5 flex-column justify-content-center align-items-center'>
+            <div className=' m-3  w-100 d-flex gap-5 flex-column justify-content-center align-items-center'>
                 <h2 className={`kiwiMaruFont color2 fw-semibold`}>Medical Specifications</h2>
                 <div className={`${style.Specifics}`}>
                     {

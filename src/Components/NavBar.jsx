@@ -110,7 +110,7 @@ function NavBar() {
                   <li className={`${style.dropdownItem}`} >
                     <NavLink
                       className={`${style.dropdownItem} color4  fs-6  kiwiMaruFont   `}
-                      to={User.role=="Doctor"? `/DoctorProfile/${User.name}`:"/PatientProfile"}
+                      to={User.role=="Doctor"? `/DoctorProfile/${User.name}`:`/patient/${User.name}`}
                     >
                       My Profile
                     </NavLink>
