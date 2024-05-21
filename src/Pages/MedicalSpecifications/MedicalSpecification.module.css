@@ -87,14 +87,14 @@
     transform: rotatey(-80deg);
 }
 
-p {
+.allMEd  p {
     font-size: 20px;
     font-weight: bolder;
     color: var(--color2);
 }
 
 
-svg {
+.allMEd svg {
     width: 30px;
     fill: var(--color2);
 }

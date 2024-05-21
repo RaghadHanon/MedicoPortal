@@ -1,11 +1,15 @@
 import React ,{useState, useContext} from 'react'
 import image from '../../../public/health-report.png'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link , useNavigate } from 'react-router-dom'
 import { UserContext } from '../../Context/User';
 import style from './Request.module.css'
 import axios from 'axios'
 
+import { ToastContainer } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 function Request() {
+  
+  const navigate = useNavigate()
   const { name, doctorId } = useParams();
   const {userToken} = useContext(UserContext);
   const [pRequest, setPRequest ] = useState({
@@ -34,6 +38,18 @@ function Request() {
     setPRequest ({
       description: '',
     });
+    toast.success("Request sent successfully", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+    navigate(`/DoctorProfile/${name}`);
   
   
   }catch(e){
@@ -53,7 +69,7 @@ function Request() {
 
           <form onSubmit={handleSubmit} className={`d-flex flex-column justify-content-between gap-4 flex-grow-1`}>
             <label htmlFor='description' className={`color2 kiwiMaruFont fw-semibold `}>Description</label>
-            <input type='text' id='description' name='description' value={pRequest.description} onChange={handleChange} className={`flex-grow-1 p-2 `} placeholder='Kindly Provide a Detailed Description of Your Symptoms here...' />
+            <textarea id='description' name='description' value={pRequest.description} onChange={handleChange} className={`flex-grow-1 p-2 `} placeholder='Kindly Provide a Detailed Description of Your Symptoms here...' />
 
             <input type='submit' value='Send Request' className={`color4 bgcolor2 kiwiMaruFont `} />
           </form>
@@ -63,10 +79,10 @@ function Request() {
           <h4 className={`color4 kiwiMaruFont text-center`}>Health Check Request</h4>
           <img src={image} className={`w-100 p-4`} />
 
-          <div className={`d-flex flex-column justify-content-between align-items-center gap-3`}>
+          <div className={`d-flex flex-column justify-content-between align-items-center gap-2`}>
             <span className={`color4 kiwiMaruFont`}>Sent to Dr.{name}</span>
             <Link to={`/DoctorProfile/${name}`} className={`text-decoration-none color4 fw-semibold bgcolor3 py-1 px-4 rounded-1`}>Check Doctor Profile</Link>
-
+            <span className={`color4 kiwiMaruFont`}>Don't forget to visit the clinic!</span>
           </div>
         </div>
       </div>
