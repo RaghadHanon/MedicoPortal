@@ -337,7 +337,6 @@ export default ResponseForm
 
 
 
-<<<<<<< HEAD
   /*
   const clearGeneralReport = () =>{
     setGeneralReport({
@@ -434,5 +433,3 @@ export default ResponseForm
                         <button onClick={clearGeneralReport} className={`text-decoration-none bgcolor2 border-0 color4 px-3 py-1 rounded`}>Clear</button>
 
           </div>*/}
-=======
->>>>>>> hanan

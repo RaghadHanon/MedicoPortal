@@ -5,15 +5,7 @@ import female from '../../../public/doctorF.png'
 import { Link } from 'react-router-dom';
 
 function DoctorCard({ doctor }) {
-<<<<<<< HEAD
-=======
-  //قبل الرفع الاول اعملي هيك
-  //عبير 1  خدي الكود كامل حطيه بملف وهون بس احذفي اللي جوا الريتيرين
 
-  
-  //هاد الرفع الثاني 
-  //رجعي الكود زي ما كان 
->>>>>>> hanan
   return (
     <div>
        <Link to={`/DoctorProfile/${doctor.name}`} className={`text-decoration-none color2 `}>

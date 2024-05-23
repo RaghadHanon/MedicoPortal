@@ -2,11 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom';
 import axios from 'axios';
 import DoctorCard from './DoctorCard';
-<<<<<<< HEAD
 
-=======
-//اول رفع لعبير 
->>>>>>> hanan
 function Doctors() {
 
   const [dataSet, setDataSet] = useState([]);
