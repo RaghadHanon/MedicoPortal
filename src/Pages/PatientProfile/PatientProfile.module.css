@@ -1,0 +1,61 @@
+.imgPr{
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+  }
+
+  .medicalInfo img{
+    width:20px;
+  }
+  
+.editForm{
+  background-color: #176b873b;
+}
+.editForm input ,.editForm select  {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #d7d7d7;
+  margin-left: 10px;
+  
+}
+
+.pages ul,.pages li{
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  cursor: pointer;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.BloodBox{
+  height: 500px;
+  overflow: auto;
+  
+}
+
+
+.pointer{
+  cursor: pointer;
+}
+.Box{
+  height: 600px;
+  overflow: auto;
+}
+.Resp p   {
+  border: 1px solid #d7d7d7;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+.Resp span{
+  font-weight: 700;
+}
+
+.response ul ,.response ul li {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  cursor: pointer;
+}

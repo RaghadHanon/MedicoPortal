@@ -1,1 +1,0 @@
-Electronic medical clinic

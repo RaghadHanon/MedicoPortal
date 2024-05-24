@@ -1,0 +1,25 @@
+.imgPr{
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 2px solid var(--color2);
+}
+.response ul ,.response ul li {
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  cursor: pointer;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.Resp p   {
+  border: 1px solid #d7d7d7;
+  padding: 15px;
+  border-radius: 15px;
+  
+}
+.Resp span{
+  font-weight: 700;
+}
