@@ -7,7 +7,9 @@
   .medicalInfo img{
     width:20px;
   }
-  
+  .OverFlow{
+    overflow: hidden;
+  }
 .editForm{
   background-color: #176b873b;
 }
