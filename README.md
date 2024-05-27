@@ -1,6 +1,6 @@
 # MedicoPortal
 
-![image](https://github.com/RaghadHanon/MedicoPortal/blob/master/public/logo.png)
+![image](https://github.com/RaghadHanon/MedicoPortal/blob/master/public/LogoTheme2C.png)
 
 ## Table of Contents
 
