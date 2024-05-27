@@ -113,9 +113,7 @@ function DoctorProfile() {
       });
       setRequests(data.requests);
       setDataSet(data);
-
       setLoader(false);
-
     } catch (e) {
       console.log(e);
     }
