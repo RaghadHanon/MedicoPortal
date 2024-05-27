@@ -1,6 +1,6 @@
 # MedicoPortal
 
-<img src="https://github.com/RaghadHanon/MedicoPortal/raw/master/public/introIm.png" alt="Introduction Image" width="700">
+<img src="https://github.com/RaghadHanon/MedicoPortal/raw/master/public/introIm.png" alt="Introduction Image" width="630">
 
 ## Table of Contents
 
