@@ -1,6 +1,6 @@
 # MedicoPortal
 
-![image](https://github.com/RaghadHanon/MedicoPortal/blob/master/public/introIm.png)
+<img src="https://github.com/RaghadHanon/MedicoPortal/raw/master/public/introIm.png" alt="Introduction Image" width="700">
 
 ## Table of Contents
 
