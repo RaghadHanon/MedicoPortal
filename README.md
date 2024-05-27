@@ -19,7 +19,7 @@ MedicoPortal provides an intuitive and secure platform where patients can manage
 
 ## Demo
 
-https://softwareproject-w3yf.onrender.com/
+- [MedicoPortal](https://softwareproject-w3yf.onrender.com/)
 
 ## Features
 
