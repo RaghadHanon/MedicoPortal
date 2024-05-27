@@ -77,12 +77,11 @@ To run this project locally, follow these steps:
 5. Open your browser and go to `http://localhost:3000` to access the app.
 
 
-
 ## Contact
 
 If you have any questions or feedback regarding this project, you can reach us at:
 
-- **Name:**Raghad Hanon
+- **Name:** Raghad Hanon
   - **Email:** Raghadhanoon2015@gmail.com
   - **LinkedIn:** [Raghad Hanon LinkedIn](https://www.linkedin.com/in/raghad-hanon/)
 
