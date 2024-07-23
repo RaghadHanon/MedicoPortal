@@ -65,7 +65,10 @@ MedicoPortal provides an intuitive and secure platform where patients can manage
 - **Authentication:** JWT
 - **APIs:** RESTful API
 
+## Backend repo 
+- [MedicoPortalBackend](https://github.com/RaghadHanon/MedicoPortalBackend).
 
+  
 ## Installation
 
 To run this project locally, follow these steps:
